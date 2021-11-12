@@ -62,46 +62,32 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x===y) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  var igualdad = x===y ? true : false;
+  return igualdad;
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length===str2.length) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  var mismaLongitud = str1.length===str2.length ? true : false;
+  return mismaLongitud;
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num < 90) {
-    return true;
-  }
-  else {
-    return false}
+  var menosQue = num<90 ? true : false;
+  return menosQue;
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num>50){
-    return true;
-  }
-  else {
-    return false}
+  var mayorQue = num>50 ? true : false;
+  return mayorQue;
 }
 
 function obtenerResto(x, y) {
@@ -114,22 +100,16 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 === 0) {
-    return true;
-  }
-  else {
-    return false}
+  var par = num % 2 ===0 ? true : false;
+    return par;
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 != 0) {
-    return true;
-  }
-  else {
-    return false}
+  var par = num % 2 !=0 ? true : false;
+  return par;
 }
 
 
@@ -137,13 +117,13 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return num * num;
+  return Math.pow(num,2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num * num * num;
+  return Math.pow(num,3)
 }
 
 function elevar(num, exponent) {
